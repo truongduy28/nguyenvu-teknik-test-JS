@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #eef1f2;
+}
+
+.carousel {}
+
+.carousel-cell {
+    width: 16%;
+    /* height: 200px; */
+    margin-right: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.25s;
+}
+
+.carousel-cell:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.carousel-cell.is-selected {
+    /* background: #ED2; */
+}
+
+
+.product-container {
+    background: fff;
+    overflow: hidden;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.product__image {
+    height: 200px;
+    width: calc(100% - 10px);
+    margin: 10px auto;
+}
+
+.product__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.product__info_text {
+    padding: 0px 10px 10px;
+    text-align: center;
+}
+
+.product__info_text>span {
+    color: #585858;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product__info_text>h2 {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #212121;
+}
+
+.product__info_text .product__info_price {
+    color: #f7434c;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+
+.product__button {
+    padding: 0px 15px;
+}
+
+.product__button button {
+    width: 100%;
+    background-image: linear-gradient(to right, #f7474c, #fb644b);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    border: none;
+    color: #eef1f2;
+    line-height: 35px;
+    border-radius: 7px;
+
+    font-size: 17px;
+}
+
+.dialog-container {
+    background: #f4f4f4;
+    width: 50%;
+    margin: 10px auto;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 95vh;
+}
+
+.dialog__image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.dialog__image img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.dialog__content {
+    overflow: hidden;
+}
+
+.dialog__content h1 {
+    text-align: center;
+}
+
+.dialog-container .actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.dialog-container .actions img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
